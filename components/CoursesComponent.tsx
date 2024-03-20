@@ -11,10 +11,10 @@ type CardComponentProps = {
 export default function CoursesComponent(props: CardComponentProps) {
   return (
     <div className="max-w-auto lg:mx-0 md:mx-0 mx-5 shadow-md bg-white rounded-b-lg hover:shadow-lg dark:bg-white hover:opacity-90 transition duration-500">
-      <figure className="max-w-lg text-center bg-[#253C9520] lg:bg-white rounded-t-lg">
+      <figure className="max-w-lg text-center border-b-2 lg:bg-white rounded-t-lg">
         <img
           className="h-40 max-w-auto mx-auto lg:py-0 py-5"
-          src="${props.image}"
+          src={props.image}
         />
       </figure>
       <div className="p-5 pb-1">
@@ -26,7 +26,7 @@ export default function CoursesComponent(props: CardComponentProps) {
         </a>
 
         <a href="#">
-          <h5 className="mb-2 mt-5 text-md lg:h-10 tracking-widest line-clamp-2 font-bold tracking-tight text-gray-900 dark:text-[#253C95] uppercase">
+          <h5 className="mb-2 mt-5 text-md lg:h-10 tracking-widest line-clamp-2 font-bold text-gray-900 dark:text-[#253C95] uppercase">
             {props.title}
           </h5>
         </a>

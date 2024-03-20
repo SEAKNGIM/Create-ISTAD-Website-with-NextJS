@@ -8,7 +8,6 @@ import {
   FooterTitle,
 } from "flowbite-react";
 import React from "react";
-import logo from "../asset/img/logo.png";
 
 export default function FooterComponent() {
   return (
@@ -18,7 +17,7 @@ export default function FooterComponent() {
           <div className="inline text-white">
             <FooterBrand
               href="https://istad.co/"
-              src="../asset/img/logo.png"
+              src="https://istad.co/resources/img/logo_md.png"
               alt="Cstad Logo"
             />
             <p>Start your IT career with CSTAD</p>

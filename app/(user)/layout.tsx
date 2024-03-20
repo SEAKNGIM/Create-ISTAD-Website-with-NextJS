@@ -1,6 +1,8 @@
-import HeaderComponent from "@/components/HeaderComponent ";
-import "./globals.css";
+import HeaderComponent from "@/components/navbar/HeaderComponent ";
+import "../globals.css";
 import FooterComponent from "@/components/FooterComponent ";
+import { Suspense } from "react";
+import Loading from "./loading";
 
 export default function RootLayout({
   children,
@@ -14,8 +16,12 @@ export default function RootLayout({
       </head>
       <body>
         {/* header */}
-        <HeaderComponent />
-        {children}
+        <aside>
+          <HeaderComponent />
+        </aside>
+        <main>
+          <Suspense fallback={<Loading />}>{children}</Suspense>
+        </main>
         {/* footer */}
         <FooterComponent />
       </body>
