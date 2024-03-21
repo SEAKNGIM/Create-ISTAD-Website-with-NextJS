@@ -28,6 +28,11 @@ export const MenuList = [
         name: "About Us",
         path: "/about-us",
         active: false,
+    },
+    {
+        name: "Service",
+        path: "/service",
+        active: false,
     }
 ]
 
