@@ -3,6 +3,7 @@ import "../globals.css";
 import FooterComponent from "@/components/FooterComponent ";
 import { Suspense } from "react";
 import Loading from "./loading";
+import { inter, suwannaphum, localCustomFont } from "./fonts";
 
 export default function RootLayout({
   children,
@@ -14,7 +15,7 @@ export default function RootLayout({
       <head>
         <link href="/website/css/uicons-so" rel="stylesheet" />
       </head>
-      <body>
+      <body className={`${suwannaphum.variable} ${inter.variable} ${localCustomFont.variable}`}>
         {/* header */}
         <aside>
           <HeaderComponent />

@@ -37,7 +37,7 @@ export default function HeaderComponent() {
               className="text-white"
               href={menu.path}
               active={menu.path === pathname}
-              as={Link}
+              as={Link} 
             >
               {menu.name}
             </NavbarLink>
